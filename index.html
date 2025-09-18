@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Ayesha Rao - Psychologist App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app-container">
+<header><h1 id="appTitle">Welcome</h1></header>
+<main id="mainContent">
+<div id="signupPage" class="auth-container">
+<h2>Create Your Account</h2>
+<input type="text" id="fullName" placeholder="Full Name"/>
+<input type="number" id="age" placeholder="Age"/>
+<select id="gender">
+<option value="">Select Gender</option>
+<option>Male</option>
+<option>Female</option>
+<option>Other</option>
+</select>
+<input type="email" id="email" placeholder="Email"/>
+<input type="text" id="newUser" placeholder="Username"/>
+<input type="password" id="newPass" placeholder="Password"/>
+<button onclick="signup()">Sign Up</button>
+</div>
+<div id="authPage" class="auth-container hidden">
+<h2>Sign In</h2>
+<input type="text" id="username" placeholder="Username"/>
+<input type="password" id="password" placeholder="Password"/>
+<button onclick="login()">Login</button>
+</div>
+<div id="homePage" class="hidden">
+<div class="card"><h2>Hello!</h2><p>Welcome to Dr. Ayesha Rao's Psychology App.</p></div>
+</div>
+</main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
